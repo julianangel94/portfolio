@@ -57,7 +57,7 @@ const Curriculum = () => {
                   </span>
                 </div>
                 <div className="text-contact">
-                  <img src="/icons/award.svg" alt="born" />
+                  <img src="/icons/calendar.svg" alt="born" />
                   <span className="mx-2">04/06/1994</span>
                 </div>
               </div>
@@ -129,8 +129,12 @@ const Curriculum = () => {
                 alt="Curriculum"
                 className="d-none mx-auto d-print-block photo-print"
               />
-              <h1 className="text-secondary">{info.name}</h1>
-              <h4>Ingeniero de sistemas</h4>
+              <h1 className="text-secondary d-none d-lg-block d-print-block">
+                {info.name}
+              </h1>
+              <h4 className="d-none d-lg-block d-print-block">
+                Ingeniero de sistemas
+              </h4>
             </div>
 
             <div className="d-none d-print-block">
