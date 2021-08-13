@@ -18,18 +18,18 @@ const Curriculum = () => {
     <>
       <section id="hv" className="container-fluid min-vh-100">
         <div className="row content">
-          <div className="left-section col-lg-3 d-flex flex-column align-items-center py-3">
+          <div className="left-section col-lg-3 d-flex flex-column align-items-center py-3 d-print-none">
             <img
               src="/images/me.jpg"
               alt="Curriculum"
-              className="photo rounded w-75 h-25"
+              className="photo rounded w-50"
             />
             <div className="w-100 mt-3 px-2">
-              <div className="my-3">
+              <div className="my-3 text-center d-lg-none">
                 <h1>{info.name}</h1>
                 <h4>Ingeniero de sistemas</h4>
               </div>
-              <div className="line w-100 ">
+              <div className="line w-100 d-lg-none">
                 <div className="arrow">
                   <div className="pin"></div>
                   <div className="pin"></div>
@@ -38,7 +38,7 @@ const Curriculum = () => {
               <div className="w-100 mt-5 px-2"></div>
               <h2 className="mb-2 text-center">Contacto</h2>
               <div className="ps-2">
-                <div>
+                <div className="text-contact">
                   <img src="/icons/mail.svg" alt="mail" />
                   <span className="mx-2">
                     <a id="email" href={`mailto:${info.email}`}>
@@ -46,17 +46,17 @@ const Curriculum = () => {
                     </a>
                   </span>
                 </div>
-                <div>
+                <div className="text-contact">
                   <img src="/icons/phone.svg" alt="phone" />
                   <span className="mx-2">{info.cel}</span>
                 </div>
-                <div>
+                <div className="text-contact">
                   <img src="/icons/geo.svg" alt="localization" />
                   <span className="mx-2">
                     Calle 37 # 87 - 19, Medellín, Colombia.
                   </span>
                 </div>
-                <div>
+                <div className="text-contact">
                   <img src="/icons/award.svg" alt="born" />
                   <span className="mx-2">04/06/1994</span>
                 </div>
@@ -69,16 +69,20 @@ const Curriculum = () => {
               </div>
             </div>
             <div className="w-100 mt-5 px-2">
-              <h2 className="mb-2 text-center">Habilidades</h2>
+              <h2 className="mb-2 text-center">Conocimientos</h2>
               <ul>
                 <li>
-                  <b>Leguajes:</b> C#, Razor Pages, JavaScript.
+                  <b>Leguajes:</b> C#, JavaScript, PHP.
                 </li>
                 <li>
-                  <b>Frameworks:</b> .NET Core, .NET ASP, Blazor, NextJS.
+                  <b>Frameworks:</b> .NET Core, .NET ASP, Xamarin, WPF, Blazor,
+                  Razor Pages, NextJS.
                 </li>
                 <li>
-                  <b>Librerías:</b> React.
+                  <b>Librerías:</b> React, JQuery.
+                </li>
+                <li>
+                  <b>Bases de datos:</b> SQL Server, Oracle, MySQl.
                 </li>
                 <li>
                   <b>Repositorios:</b> Git, Github, GitLab, Azure.
@@ -120,8 +124,34 @@ const Curriculum = () => {
 
           <div className="right-section col-lg-9 pt-2 p-4">
             <div className="my-3 text-center">
+              <img
+                src="/images/me.jpg"
+                alt="Curriculum"
+                className="d-none mx-auto d-print-block photo-print"
+              />
               <h1 className="text-secondary">{info.name}</h1>
               <h4>Ingeniero de sistemas</h4>
+            </div>
+
+            <div className="d-none d-print-block">
+              <h2 className="text-secondary">Contacto</h2>
+              <hr></hr>
+              <div className="hv-content">
+                <ul>
+                  <li>
+                    <b>Teléfono:</b> 3168216424
+                  </li>
+                  <li>
+                    <b>E-mail:</b> julianangel94@gmail.com
+                  </li>
+                  <li>
+                    <b>Ciudad:</b> Medellín, Colombia
+                  </li>
+                  <li>
+                    <b>Fecha de nacimiento:</b> 04 de Junio de 1994
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <h2 className="text-secondary">Perfil</h2>
@@ -178,6 +208,31 @@ const Curriculum = () => {
               </p>
             </div>
 
+            <div className="d-none d-print-block">
+              <h2 className="text-secondary">Conocimientos</h2>
+              <hr></hr>
+              <div className="hv-content">
+                <ul>
+                  <li>
+                    <b>Leguajes:</b> C#, JavaScript, PHP.
+                  </li>
+                  <li>
+                    <b>Frameworks:</b> .NET Core, .NET ASP, Xamarin, WPF,
+                    Blazor, Razor Pages, NextJS.
+                  </li>
+                  <li>
+                    <b>Librerías:</b> React, JQuery.
+                  </li>
+                  <li>
+                    <b>Bases de datos:</b> SQL Server, Oracle, MySQl.
+                  </li>
+                  <li>
+                    <b>Repositorios:</b> Git, Github, GitLab, Azure.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <h2 className="text-secondary">Educación</h2>
             <hr></hr>
             <div className="hv-content">
@@ -195,6 +250,21 @@ const Curriculum = () => {
                   JavaScript, Git, Inglés, DB), obtenidas desde el 2019.
                 </li>
               </ul>
+            </div>
+
+            <div className="d-none d-print-block">
+              <h2 className="text-secondary">Idiomas</h2>
+              <hr></hr>
+              <div className="hv-content">
+                <ul>
+                  <li>
+                    <b>Inglés</b> (B1)
+                  </li>
+                  <li>
+                    <b>Español</b> (Nativo)
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <h2 className="text-secondary">Referencias</h2>
@@ -258,6 +328,15 @@ const Curriculum = () => {
           min-height: 100vh;
         }
 
+        .text-contact {
+          font-size: 0.9rem;
+        }
+
+        .photo-print{
+          height: 300px;
+          width: 250px;
+        }
+
         .left-section {
           background: ${colors.secondary};
           color: ${colors.white};
@@ -299,7 +378,7 @@ const Curriculum = () => {
 
         .photo {
           box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-          object-fit:fill;
+          object-fit: contain;
         }
 
         .hv-section {
@@ -383,6 +462,11 @@ const Curriculum = () => {
         @media (max-width: ${breakpoints.ipad}) {
           span {
             font-size: ${fontSizes.font_size_sm};
+          }
+
+          @media (max-width: 400px {
+          .text-contact {
+            font-size: 0.5rem;
           }
 
           .photo {
