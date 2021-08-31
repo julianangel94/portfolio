@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Footer from "components/Footer";
 export default function AppLayout({ children }) {
   return (
     <>
@@ -9,7 +8,6 @@ export default function AppLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>{children}</main>
-      <Footer />
       {/* <style jsx>{styles}</style> */}
       {/* <style jsx global> </style>*/}
     </>

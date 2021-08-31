@@ -5,9 +5,7 @@ const Curriculum = () => {
   const info = {
     cel: "3168216424",
     email: "julianangel94@gmail.com",
-    // github: "julianangel",
-    // domain: "www.elapadelosapaces.com",
-    name: "Julian Angel Arango",
+    name: "Julián Ángel Arango",
   };
 
   const print = () => {
@@ -20,34 +18,36 @@ const Curriculum = () => {
     <>
       <section id="hv" className="container-fluid min-vh-100">
         <div className="row content">
-          <div className="left-section col-lg-2 d-flex flex-column align-items-center py-3">
+          <div className="left-section col-lg-3 d-flex flex-column align-items-center py-3">
             <img
               src="/images/me.jpg"
               alt="Curriculum"
               className="photo rounded w-100"
             />
             <div className="w-100 mt-3 px-2">
-              <h2 className="mb-2 text-center">Contactame</h2>
+              <h2 className="mb-2 text-center">Contacto</h2>
               <ul>
                 <li>
                   <img src="/icons/mail.svg" alt="mail" />
-                  <span className="mx-2">{info.email}</span>
+                  <span className="mx-2">
+                    <a id="email" href={`mailto:${info.email}`}>
+                      {info.email}
+                    </a>
+                  </span>
                 </li>
                 <li>
                   <img src="/icons/phone.svg" alt="phone" />
                   <span className="mx-2">{info.cel}</span>
                 </li>
-                {/* <li>
-                  <img src="/icons/github.svg" alt="github" />
-                  <span className="mx-2">
-                    <a href={`https://github.com/sbetancurs${info.github}`}>
-                      {info.github}
-                    </a>
-                  </span>
-                </li> */}
                 <li>
                   <img src="/icons/geo.svg" alt="localization" />
-                  <span className="mx-2">Medellín, Colombia.</span>
+                  <span className="mx-2">
+                    Calle 37 # 87 - 19, Medellín, Colombia.
+                  </span>
+                </li>
+                <li>
+                  <img src="/icons/award.svg" alt="born" />
+                  <span className="mx-2">04/06/1994</span>
                 </li>
               </ul>
             </div>
@@ -58,21 +58,19 @@ const Curriculum = () => {
               </div>
             </div>
             <div className="w-100 mt-5 px-2">
-              <h2 className="mb-2  text-center">Educacion</h2>
+              <h2 className="mb-2  text-center">Habilidades</h2>
               <ul>
                 <li>
-                  <img src="/icons/award.svg" alt="award" />
-                  <span className="mx-2">
-                    Tecnologo de sistemas, ITM(Instituto Tecnologico
-                    Metropolitano), junio 2015.
-                  </span>
+                  <b>Leguajes:</b> C#, Razor Pages, JavaScript.
                 </li>
                 <li>
-                  <img src="/icons/award.svg" alt="award" />
-                  <span className="mx-2">
-                    Ingeniro de sistemas, ITM(Instituto Tecnologico
-                    Metropolitano), Abril 2018.
-                  </span>
+                  <b>Frameworks:</b> .NET Core, .NET ASP, Blazor, NextJS.
+                </li>
+                <li>
+                  <b>Librerías:</b> React.
+                </li>
+                <li>
+                  <b>Repositorios:</b> Git, Github, GitLab, Azure.
                 </li>
               </ul>
             </div>
@@ -81,6 +79,17 @@ const Curriculum = () => {
                 <div className="pin"></div>
                 <div className="pin"></div>
               </div>
+            </div>
+            <div className="w-100 mt-5 px-2">
+              <h2 className="mb-2  text-center">Idiomas</h2>
+              <ul>
+                <li>
+                  <b>Inglés</b> (B1)
+                </li>
+                <li>
+                  <b>Español</b> (Nativo)
+                </li>
+              </ul>
             </div>
             <div id="languageMenu" className="w-100 mt-5 px-2">
               <div className="printFeature d-flex justify-content-center mb-3">
@@ -91,150 +100,124 @@ const Curriculum = () => {
               </div>
             </div>
           </div>
-          <div className="right-section col-lg-10 pt-2 pt-lg-0">
-            <div
-              id="contact-info"
-              className="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center align-items-start"
-            >
-              <h1>{info.name}</h1>
-              <div>
-                <a id="email" href={`mailto:${info.email}`}>
-                  {info.email}
-                </a>
-                <br />
-                <a target="_blank">{info.domain}</a>
-                <br />
-                Medellín, Colombia
-              </div>
+
+          <div className="right-section col-lg-9 pt-2 p-4">
+            <div className="my-3 text-center">
+              <h1 className="text-secondary">{info.name}</h1>
+              <h4>Ingeniero de sistemas</h4>
             </div>
-            <div className="hv-section">
-              <h2>Conocimientos</h2>
-            </div>
+
+            <h2 className="text-secondary">Perfil</h2>
+            <hr></hr>
             <div className="hv-content">
-              <ul>
-                <li>
-                  <b>Leguajes:</b> C#, Blazor, .Net Core, JavaScript.
-                </li>
-                <li>
-                  <b>Frameworks:</b> NextJS.
-                </li>
-                <li>
-                  <b>Librerias:</b> React.
-                </li>
-                <li>
-                  <b>Repositorios:</b> Git, Github, GitLab, Azure
-                </li>
-              </ul>
+              <p>
+                Ingeniero de sistemas con experiencia en programación de
+                Software orientado al lenguaje de programación C# utilizando
+                ASP.NET Framework Y ASP.NET Core; orientado en desarrollo de
+                frontend en MVC, Web forms, desarrollo de backend en Web Api y
+                Web Service; orientado en desarrollo de aplicaciones de
+                escritorio utilizando Windows Forms y WPF; adicionalmente con
+                conocimientos en desarrollo Web utilizando en HTML5, CSS3 y
+                Javascript; igualmente en administración de base de datos
+                utilizando SQL Server y Oracle.
+              </p>
+              <p>
+                Profesional con aptitud de liderazgo, proactivo, capacidad para
+                afrontar y resolver problemas, trabajo en equipo, adaptación al
+                cambio, responsable, honesto y con excelentes relaciones
+                interpersonales
+              </p>
             </div>
 
-            <div className="hv-section">
-              <h2>Experiencia laboral</h2>
-            </div>
+            <h2 className="text-secondary">Experiencia laboral</h2>
+            <hr></hr>
             <div className="hv-content">
-              <p className="date">Abril 2019 &rArr; Actualmente </p>
-              <div className="d-flex subtitle">
-                <h3>Sourcecol S.A.S</h3>
-              </div>
-              <address>Medellín, Colombia.</address>
+              <h4>Sourcecol S.A.S</h4>
+              <address>Abril 2019 &rArr; Actualmente </address>
               <p>
-                Desarrollador de backend y frontend en los lenguajes y
-                frameworks ASP.NET C#, .NET Core, Web Forms, Razor Pages, Html5,
-                CSS3, Bootstrap y manejo de base de datos SQL Server para crear
-                formularios web donde los usuarios pueden realizar
-                adquisiciones, generar pedidos, rastrear contratos.
-              </p>
-              <p>
-                Administrar roles y permisos para habilitar algunas funciones a
-                los usuarios y restringir otras.
-              </p>
-              <p>
-                Diseñar la web principal para ser más amigable con los usuarios.
+                Desarrollo de plataforma Web utilizando en Frontend Web forms,
+                Razor Pages, MVC .Net Framwork y .Net Core, Manejo de Backend
+                Web Api ASP .Net y Core, y administración en base de datos SQL
+                Server. Manejo básico de Azure Devops.
               </p>
 
-              <p className="date">Enero 2018 &rArr; Abril 2019</p>
-              <div className="d-flex subtitle">
-                <h3>1cero1 Softaware S.A.S</h3>
-              </div>
-              <address>Medellín, Colombia.</address>
+              <h4>101 Softaware S.A.S</h4>
+              <address>Enero 2018 &rArr; Abril 2019</address>
               <p>
-                Desarrollo de aplicaciones en los lenguajes de ASP.NET C#,
-                Windows Forms, MVC 5, Web Forms, WPF, y manejo de base de datos
-                SQL Server
-              </p>
-              <p>
-                Implementacion y administracion de la infraestructura de las
-                aplicaciones frontend y backend.
+                Desarrollo de nuevas aplicaciones en los lenguajes de ASP.NET
+                C#, MVC 5 y Web Forms. Desarrollo de aplicaciones de escritorio
+                en Windows Forms, WPF, y manejo de base de datos SQL Server.
               </p>
 
-              <p className="date">Abril 2017 &rArr; Octubre 2017</p>
-              <div className="d-flex subtitle">
-                <h3>ARUS</h3>
-              </div>
-              <address>Medellín, Colombia.</address>
+              <h4>ARUS</h4>
+              <address>Abril 2017 &rArr; Octubre 2017</address>
               <p>
                 Brindar apoyo en todo lo relacionado con soporte a los
                 aplicativos del área, tanto desarrollando como corrigiendo
                 posibles errores en ellos, con Oracle como motor de base de
-                datos y php como lenguaje de programacion. También apoyando en
+                datos y php como lenguaje de programación. También apoyando en
                 labores administrativas tales como la gestión de las
                 transferencias y de los indicadores del área.
               </p>
-
-              {/* <p className="date">("hv:january" 2017 &rArr ("hv:march" 2018</p>
-              <div className="d-flex subtitle">
-                <img src="/icons/arrow-right-short.svg" alt="mail" />
-                <h3>1Cero1 Software</h3>
-              </div>
-              <address>Junio ("hv:developer" - Medellín, Colombia.</address>
-              <p>"hv:1cero1Exp"</p> */}
             </div>
 
-            {/* <div className="hv-section">
-              <h2>"hv:entrepreneurship"</h2>
-            </div>
-            <div className="hv-content mb-3">
-              <div className="d-flex subtitle">
-                <img src="/icons/arrow-right-short.svg" alt="mail" />
-                <h3>Oxigiovanny App</h3>
-              </div>
-              <p>"hv:oxigiovannyExp"</p>
-            </div> */}
-
-            {/* <div className="hv-section">
-              <h2>"hv:openSource"</h2>
-            </div>
-            <div className="hv-content mb-3">
-              <h3>
-                <div className="d-flex subtitle">
-                  <img src="/icons/arrow-right-short.svg" alt="mail" />
-                  <Link href="/">
-                    <a target="_blank">"hv:portfolio"</a>
-                  </Link>
-                </div>
-              </h3>
-              <p>"hv:portfolioExp"</p>
-            </div> */}
-
-            <div className="hv-section">
-              <h2>Educacion</h2>
-            </div>
+            <h2 className="text-secondary">Educación</h2>
+            <hr></hr>
             <div className="hv-content">
-              <p>
-                Ingeniero de sistemas,ITM(Instituto Tecnologico Metropolitano),
-                obtenido en abril del 2018.
-              </p>
-              <p>
-                Tecnologo de sistemas, ITM(Instituto Tecnologico Metropolitano),
-                obtenido en junio del 2015.
-              </p>
-              <p>Certificaciones de Platzi, Platzi,obtenidas desde el 2019.</p>
+              <ul>
+                <li>
+                  Ingeniero de sistemas, ITM (Instituto Tecnológico
+                  Metropolitano), obtenido en abril del 2018.
+                </li>
+                <li>
+                  Tecnólogo de sistemas, ITM (Instituto Tecnológico
+                  Metropolitano), obtenido en junio del 2015.
+                </li>
+                <li>
+                  Certificaciones de Platzi, en las diferentes áreas (C#,
+                  JavaScript, Git, Inglés, DB), obtenidas desde el 2019.
+                </li>
+              </ul>
             </div>
 
-            <div className="hv-section">
-              <h2>Intereses</h2>
-            </div>
+            <h2 className="text-secondary">Referencias</h2>
+            <hr></hr>
             <div className="hv-content">
-              <p></p>
+              <ul>
+                <li>
+                  Laura Orozco - Ingeniera de Software
+                  <ul>
+                    <li>
+                      <b>Teléfono:</b> 3128423378
+                    </li>
+                    <li>
+                      <b>E-mail:</b> lauorozco13@gmail.com
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Brandon Montoya - Ingeniero de Sistemas
+                  <ul>
+                    <li>
+                      <b>Teléfono:</b> 3126104754
+                    </li>
+                    <li>
+                      <b>E-mail:</b> brandon377@hotmail.com
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Sebastián Betancur - Ingeniero de Software
+                  <ul>
+                    <li>
+                      <b>Teléfono:</b> 3118828394
+                    </li>
+                    <li>
+                      <b>E-mail:</b> sebasbetancur97@gmail.com
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
