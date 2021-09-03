@@ -61,7 +61,7 @@ export default function Typing() {
     <>
       <h2>
         <label style={{ color: "white" }}>I'm a &nbsp;</label>
-        <label style={{ color: "red" }}>{`${words[index].substring(
+        <label style={{ color: "#e6213c" }}>{`${words[index].substring(
           0,
           subIndex
         )}${blink ? "|" : " "}`}</label>
