@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-const words = ["Dev", "Pro"];
+const words = ["Engineer", "Programmer"];
 
 export default function Typing() {
   const [index, setIndex] = useState(0);
@@ -59,14 +59,14 @@ export default function Typing() {
 
   return (
     <>
-      <h1>
-        The {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
-      </h1>
-      <style jsx>{`
-        h1 {
-          color: white;
-        }
-      `}</style>
+      <h2>
+        <label style={{ color: "white" }}>I'm a &nbsp;</label>
+        <label style={{ color: "red" }}>{`${words[index].substring(
+          0,
+          subIndex
+        )}${blink ? "|" : " "}`}</label>
+      </h2>
+      <style jsx>{``}</style>
     </>
   );
 }

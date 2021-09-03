@@ -7,6 +7,10 @@ import Typing from "components/Typing";
 export default function Home() {
   return (
     <div className={styles.container}>
+      <h1>
+        <label style={{ color: "red" }}>Julián &nbsp;</label>
+        <label style={{ color: "white" }}>Ángel</label>
+      </h1>
       <Typing />
     </div>
   );
