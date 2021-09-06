@@ -59,14 +59,20 @@ export default function Typing() {
 
   return (
     <>
-      <h2>
-        <label style={{ color: "white" }}>I'm a &nbsp;</label>
+      <h2 className="type-text">
+        <label style={{ color: "white" }}>I'm a</label>
+        &nbsp;
         <label style={{ color: "#e6213c" }}>{`${words[index].substring(
           0,
           subIndex
         )}${blink ? "|" : " "}`}</label>
       </h2>
-      <style jsx>{``}</style>
+      <style jsx>{`
+        .type-text {
+          font-size: 3rem;
+          text-align: center;
+        }
+      `}</style>
     </>
   );
 }
