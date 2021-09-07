@@ -5,21 +5,27 @@ export default function Home() {
     <>
       <div className="main">
         <div className="social">
-          <a href="https://www.linkedin.com/in/juli%C3%A1n-%C3%A1ngel-arango-a587a6106/">
+          <a
+            href="https://www.linkedin.com/in/juli%C3%A1n-%C3%A1ngel-arango-a587a6106/"
+            target="_blank"
+          >
             <img
               src="images/linkedin-logo.png"
               className="social-media"
               alt="linkedin-logo"
             />
           </a>
-          <a href="https://www.instagram.com/julianangel94/?hl=es-la">
+          <a
+            href="https://www.instagram.com/julianangel94/?hl=es-la"
+            target="_blank"
+          >
             <img
               src="images/instagram-logo.png"
               className="social-media"
               alt="instagram-logo"
             />
           </a>
-          <a href="https://www.facebook.com/julian.angelarango">
+          <a href="https://www.facebook.com/julian.angelarango" target="_blank">
             <img
               src="images/facebook-logo.png"
               className="social-media"
@@ -52,6 +58,35 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <div className="social-phone">
+        <a
+          href="https://www.linkedin.com/in/juli%C3%A1n-%C3%A1ngel-arango-a587a6106/"
+          target="_blank"
+        >
+          <img
+            src="images/linkedin-logo.png"
+            className="social-media"
+            alt="linkedin-logo"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/julianangel94/?hl=es-la"
+          target="_blank"
+        >
+          <img
+            src="images/instagram-logo.png"
+            className="social-media"
+            alt="instagram-logo"
+          />
+        </a>
+        <a href="https://www.facebook.com/julian.angelarango" target="_blank">
+          <img
+            src="images/facebook-logo.png"
+            className="social-media"
+            alt="facebook-logo"
+          />
+        </a>
+      </div>
 
       <style jsx>{`
         .main-text {
@@ -69,7 +104,6 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           align-items: flex-end;
-          margin-left: 2rem;
         }
 
         .social-media {
@@ -89,7 +123,6 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           align-items: flex-end;
-          margin-right: 2rem;
         }
 
         .contact-media {
@@ -98,17 +131,44 @@ export default function Home() {
           opacity: 0.6;
           transition: all 0.4s ease;
         }
+
         .contact-media:hover {
           opacity: 1;
           transform: scale(1.1);
+        }
+
+        .social-phone {
+          display: none;
         }
 
         .main {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          height: 92vh;
+          height: calc(100vh - 16vh);
           padding: 1rem;
+          margin: 0 1rem;
+        }
+
+        @media (max-width: 600px) {
+          .social {
+            display: none;
+          }
+
+          .contact {
+            display: none;
+          }
+
+          .social-phone {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2rem;
+            height: 8vh;
+          }
+
+          .main {
+            justify-content: center;
+          }
         }
       `}</style>
     </>
