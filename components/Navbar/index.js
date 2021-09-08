@@ -14,13 +14,10 @@ export default function Navbar() {
           </a>
         </Link>
         <Link href="/">
-          <a className="over">Portfolio</a>
-        </Link>
-        <Link href="/">
-          <a className="over">knowledge</a>
+          <a className="over">PROJECTS</a>
         </Link>
         <Link href="/About">
-          <a className="over">About</a>
+          <a className="over">ABOUT</a>
         </Link>
         <Link href="/CV">
           <a className="over">CV</a>
@@ -41,6 +38,7 @@ export default function Navbar() {
           color: #e6213c;
           padding: 1.5rem 1rem;
           font-size: 17px;
+          font-weight: bold;
         }
 
         .over:hover {
