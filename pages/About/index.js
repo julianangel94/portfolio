@@ -92,52 +92,68 @@ const About = () => {
           <label style={{ color: "#e6213c" }}>Skills</label>
         </h1>
         <div className="skills-main">
-          <div className="skill-html skill">
-            <div className="skill-text">
-              <div className="html">HTML/CSS</div>
+          <div className="left-skills">
+            <div className="skill-html skill">
+              <div className="skill-text">
+                <div className="html">HTML/CSS</div>
+              </div>
+              <div className="html-prog prog">
+                <div className="progress" style={{ width: "80%" }}>
+                  80%
+                </div>
+              </div>
             </div>
-            <div className="html-prog prog">
-              <div className="html-progress">95%</div>
+            <div className="skill-html skill">
+              <div className="skill-text">
+                <div className="html">Javascript</div>
+              </div>
+              <div className="html-prog prog">
+                <div className="progress" style={{ width: "70%" }}>
+                  70%
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="skill-html skill">
-            <div className="skill-text">
-              <div className="html">Javascript</div>
-            </div>
-            <div className="html-prog prog">
-              <div className="js-progress">90%</div>
-            </div>
-          </div>
-          <div className="skill-html skill">
-            <div className="skill-text">
-              <div className="html">Adobe Ps</div>
-            </div>
-            <div className="html-prog prog">
-              <div className="adobe-progress">83%</div>
-            </div>
-          </div>
-          <div className="skill-html skill">
-            <div className="skill-text">
-              <div className="html">PHP</div>
-            </div>
-            <div className="html-prog prog">
-              <div className="php-progress">87%</div>
-            </div>
-          </div>
-          <div className="skill-html skill">
-            <div className="skill-text">
-              <div className="html">JQuery</div>
-            </div>
-            <div className="html-prog prog">
-              <div className="jquery-progress">94%</div>
+            <div className="skill-html skill">
+              <div className="skill-text">
+                <div className="html">SQL</div>
+              </div>
+              <div className="html-prog prog">
+                <div className="progress" style={{ width: "80%" }}>
+                  80%
+                </div>
+              </div>
             </div>
           </div>
-          <div className="skill-html skill">
-            <div className="skill-text">
-              <div className="html">SEO</div>
+          <div className="right-skills">
+            <div className="skill-html skill">
+              <div className="skill-text">
+                <div className="html">C#</div>
+              </div>
+              <div className="html-prog prog">
+                <div className="progress" style={{ width: "80%" }}>
+                  80%
+                </div>
+              </div>
             </div>
-            <div className="html-prog prog">
-              <div className="seo-progress ">84%</div>
+            <div className="skill-html skill">
+              <div className="skill-text">
+                <div className="html">GIT</div>
+              </div>
+              <div className="html-prog prog">
+                <div className="progress" style={{ width: "78%" }}>
+                  78%
+                </div>
+              </div>
+            </div>
+            <div className="skill-html skill">
+              <div className="skill-text">
+                <div className="html">Frameworks</div>
+              </div>
+              <div className="html-prog prog">
+                <div className="progress" style={{ width: "75%" }}>
+                  75%
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -163,8 +179,9 @@ const About = () => {
         }
 
         .image {
-          width: 580px;
-          height: 580px;
+          width: 100%;
+          min-width: 580px;
+          height: 100%;
           padding: 0.5rem;
           border-radius: 50%;
         }
@@ -209,8 +226,10 @@ const About = () => {
         }
 
         .knowledge-main {
+          height: 100%;
           display: flex;
           justify-content: space-between;
+          align-items: center;
           margin-top: 4rem;
         }
 
@@ -270,7 +289,21 @@ const About = () => {
 
         .skills-main {
           display: flex;
+          justify-content: center;
           margin-top: 4rem;
+          width: 100%;
+        }
+
+        .left-skills {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .right-skills {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
         }
 
         .prog {
@@ -293,32 +326,54 @@ const About = () => {
 
         .skill-html {
           height: auto;
-          width: 45%;
           padding: 0%;
           color: white;
           padding: 1.5%;
         }
+
         .skill-text {
-          width: 80%;
-          height: 50px;
+          width: 100%;
+          padding: 0.5rem 0;
         }
 
         .html-prog {
           width: 100%;
-          height: 40px;
+          height: 2rem;
           border-radius: 10px;
           background: #333333;
           box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.1);
+          display: flex;
+          align-items: center;
+          padding: 0 0.2rem;
         }
 
-        .html-progress {
-          height: 80%;
+        .progress {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 95%;
           border-radius: 10px;
-          background: #c70039;
+          background: #e6213c;
+          height: 80%;
+        }
+
+        @media (max-width: 1200px) {
+          .image {
+            display: none;
+          }
+
+          .knowledge-main {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .knowledge {
+            height: 100%;
+            width: 700px;
+          }
+
+          .skills-main {
+            flex-direction: column;
+          }
         }
       `}</style>
     </>
