@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-      <div className="about-content">
+      <section className="about-content">
         <h1 className="title">
           <label style={{ color: "white" }}>About</label>
           &nbsp;
@@ -39,9 +39,9 @@ const About = () => {
             <img src="images/About.jpg" alt="Your Image" className="image" />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="knowledge-content">
+      <section className="knowledge-content">
         <h1 className="title">
           <label style={{ color: "#e6213c" }}>My</label>
           &nbsp;
@@ -83,9 +83,9 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="skills-content">
+      <section className="skills-content">
         <h1 className="title">
           <label style={{ color: "white" }}>My</label>
           &nbsp;
@@ -157,7 +157,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <style jsx>{`
         .about-content {
           display: flex;
@@ -236,11 +236,11 @@ const About = () => {
         .knowledge {
           display: flex;
           flex-direction: column;
-          height: 380px;
+          min-height: 380px;
           width: 28%;
           margin: 1.5%;
           background-color: #333333;
-          box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.05);
+          box-shadow: 0 0 25px rgb(0, 0, 0, 0.05);
           z-index: 2;
           border-radius: 10px;
           overflow: hidden;
@@ -253,25 +253,29 @@ const About = () => {
           margin: 20px;
           border-radius: 30%;
           padding: 10px;
-          border: 0px solid #e6213c;
+          border: 0 solid #e6213c;
           background: #e6213c;
-          box-shadow: 0px 0px 0px 0px #e6213c;
+          box-shadow: 0 0 0 0 #e6213c;
           height: 100px;
           transition: all 0.8s ease;
         }
+
         .knowledge:hover .knowledge-img img {
-          box-shadow: 0px 0px 0px 400px #e6213c;
+          box-shadow: 0 0 0 400px #e6213c;
         }
+
         .knowledge-description {
           color: white;
           z-index: 2;
         }
+
         .knowledge-description h2 {
           padding: 10px;
           margin: 5px;
           font-weight: 500;
           font-size: 30px;
         }
+
         .knowledge-description p {
           padding: 10px;
           font-weight: 200;
@@ -357,8 +361,16 @@ const About = () => {
         }
 
         @media (max-width: 1200px) {
+          .about-content {
+            height: 100%;
+          }
+
           .image {
             display: none;
+          }
+
+          .knowledge-content {
+            height: 100%;
           }
 
           .knowledge-main {
@@ -368,11 +380,21 @@ const About = () => {
 
           .knowledge {
             height: 100%;
-            width: 700px;
+            min-width: 450px;
+          }
+
+          .skills-content {
+            height: 100%;
           }
 
           .skills-main {
             flex-direction: column;
+          }
+        }
+
+        @media (max-width: 450px) {
+          .knowledge {
+            min-width: 310px;
           }
         }
       `}</style>
