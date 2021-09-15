@@ -163,7 +163,7 @@ const About = () => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          height: 82vh;
+          height: 90vh;
           padding: 1rem 4rem;
         }
 
@@ -180,7 +180,7 @@ const About = () => {
 
         .image {
           width: 100%;
-          min-width: 580px;
+          min-width: 500px;
           height: 100%;
           padding: 0.5rem;
           border-radius: 50%;
@@ -221,7 +221,7 @@ const About = () => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          height: calc(100vh - 8vh);
+          height: 90vh;
           padding: 1rem 4rem;
         }
 
@@ -287,7 +287,7 @@ const About = () => {
           display: flex;
           flex-direction: column;
           align-items: center;
-          height: calc(100vh - 8vh);
+          height: 90vh;
           padding: 1rem 4rem;
         }
 
