@@ -4,23 +4,21 @@ export default function Navbar() {
   return (
     <>
       <nav className="d-print-none">
-        <Link href="/">
-          <a>
-            <img
-              src="/images/julian-logo.svg"
-              className="logo"
-              alt="julián-logo"
-            ></img>
-          </a>
+        <Link href="/" passHref>
+          <img
+            src="/images/julian-logo.svg"
+            className="logo"
+            alt="julián-logo"
+          />
         </Link>
-        <Link href="/">
-          <a style={{ textDecoration: 'none'}} className="over">PROJECTS</a>
+        <Link href="/" passHref className="over" style={{ textDecoration: 'none' }}>
+          PROJECTS
         </Link>
-        <Link href="/About">
-          <a style={{ textDecoration: 'none'}} className="over">ABOUT</a>
+        <Link href="/About" passHref className="over" style={{ textDecoration: 'none' }}>
+          ABOUT
         </Link>
-        <Link href="/CV">
-          <a style={{ textDecoration: 'none'}} className="over">CV</a>
+        <Link href="/CV" passHref className="over" style={{ textDecoration: 'none' }}>
+          CV
         </Link>
       </nav>
 
