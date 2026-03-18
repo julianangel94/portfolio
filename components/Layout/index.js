@@ -12,11 +12,6 @@ export default function AppLayout({ children }) {
 
       <Navbar />
       <main>{children}</main>
-
-      <style jsx>{`
-         {
-        }
-      `}</style>
     </div>
   );
 }
