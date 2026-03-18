@@ -14,13 +14,13 @@ export default function Navbar() {
           </a>
         </Link>
         <Link href="/">
-          <a className="over">PROJECTS</a>
+          <a style={{ textDecoration: 'none'}} className="over">PROJECTS</a>
         </Link>
         <Link href="/About">
-          <a className="over">ABOUT</a>
+          <a style={{ textDecoration: 'none'}} className="over">ABOUT</a>
         </Link>
         <Link href="/CV">
-          <a className="over">CV</a>
+          <a style={{ textDecoration: 'none'}} className="over">CV</a>
         </Link>
       </nav>
 
