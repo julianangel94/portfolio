@@ -7,10 +7,5 @@
         "runtime": "nodejs24.x"
       }
     }
-  ],
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs24.x"
-    }
-  }
+  ]
 }
