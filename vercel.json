@@ -2,15 +2,10 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
+      "use": "@vercel/next",
       "config": {
-        "distDir": "out"
+        "runtime": "nodejs24.x"
       }
     }
-  ],
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs24.x"
-    }
-  }
+  ]
 }
