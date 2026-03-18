@@ -53,24 +53,3 @@ export default function Navbar() {
     </>
   );
 }
-
-        .over {
-          text-decoration: none;
-          color: #e6213c;
-          padding: 1.5rem 1rem;
-          font-size: 17px;
-          font-weight: bold;
-        }
-
-        .over:hover {
-          border-bottom: 0.3rem solid #e6213c;
-          color: white;
-        }
-
-        .logo {
-          padding-top: 0.5rem;
-        }
-      `}</style>
-    </>
-  );
-}
